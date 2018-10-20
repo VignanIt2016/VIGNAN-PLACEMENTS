@@ -1,10 +1,4 @@
 
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -467,7 +461,7 @@ Vadlamudi, Guntur-522213</p>
 									
 									<div class="login-right">
 										<h3>Sign in with your account</h3>
-										<form action="#" method="post">
+										<form action="SignIn.php" method="post">
 											<div class="sign-in">
 												<h4>Username :</h4>
 												<input type="text" name="regno" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">	
