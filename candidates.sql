@@ -1,0 +1,171 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 21, 2018 at 04:29 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `demo`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `candidates`
+--
+
+CREATE TABLE `candidates` (
+  `id` int(11) NOT NULL,
+  `regno` text NOT NULL,
+  `branch` text NOT NULL,
+  `year` int(11) NOT NULL,
+  `gender` text NOT NULL,
+  `backlogs` int(11) NOT NULL,
+  `imarks` float NOT NULL,
+  `10marks` float NOT NULL,
+  `bmarks` float NOT NULL,
+  `name` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `candidates`
+--
+
+INSERT INTO `candidates` (`id`, `regno`, `branch`, `year`, `gender`, `backlogs`, `imarks`, `10marks`, `bmarks`, `name`) VALUES
+(1, '161fa07031', 'IT', 4, 'm', 0, 74, 82, 98, 'Sreyash Srivastava'),
+(3, '161fa07033', 'CSE', 4, 'm', 0, 68, 37, 90, 'THARUN'),
+(4, '161fa07034', 'ChE ', 3, 'f', 2, 60, 88, 65, 'Sreyash'),
+(6, '161fa07036', 'CSE ', 3, 'f', 0, 97, 64, 86, 'Meghana'),
+(7, '161fa07031', 'IT', 4, 'm', 0, 74, 82, 98, 'Sreyash Srivastava'),
+(8, '161fa07038', 'EEE ', 4, 'f', 0, 74, 82, 98, 'Jyoti Dhawale'),
+(9, '161fa07039', 'ME ', 2, 'm', 0, 90, 34, 33, 'Kamal Soi'),
+(10, '161fa07040', 'IT ', 4, 'f', 1, 20, 23, 12, 'Gauranga Das'),
+(11, '161fa07041', 'MBA ', 2, 'm', 4, 60, 88, 65, 'Divyanshu Damani'),
+(12, '161fa07042', 'H ', 1, 'f', 2, 50, 56, 78, 'Novoneel Chakraborty'),
+(13, '161fa07043', 'PSc ', 3, 'f', 3, 97, 64, 86, 'Krishna Tammireddy'),
+(14, '161fa07044', 'AE ', 3, 'm', 0, 82, 93, 90, 'Kuldeep Ruhil'),
+(15, '161fa07045', 'BT ', 3, 'f', 0, 74, 82, 98, 'Adithya Sarma Singampalli'),
+(16, '161fa07046', 'ChE ', 3, 'm', 0, 90, 34, 33, 'Ravva kumaraTeja'),
+(17, '161fa07047', 'CE ', 4, 'f', 0, 20, 23, 12, 'Durray Nayab'),
+(18, '161fa07048', 'CSE ', 2, 'f', 1, 60, 88, 65, 'Jonah Watts'),
+(19, '161fa07049', 'ECE ', 4, 'm', 4, 50, 56, 78, 'Guntupalli Bhargav'),
+(20, '161fa07050', 'EEE ', 2, 'f', 2, 97, 64, 86, 'Khalid Qaderi'),
+(21, '161fa07051', 'ME ', 1, 'm', 3, 82, 93, 90, 'Lowkhya Reddy'),
+(22, '161fa07052', 'IT ', 3, 'f', 0, 74, 82, 98, 'R B Saraswathi'),
+(23, '161fa07053', 'MBA ', 3, 'f', 0, 90, 34, 33, 'Battu Anu Gayatri'),
+(24, '161fa07054', 'H ', 3, 'm', 0, 20, 23, 12, 'V Sri Harsha'),
+(25, '161fa07055', 'PSc ', 3, 'f', 0, 60, 88, 65, 'Sharmila Bhanu Shaik'),
+(26, '161fa07056', 'AE ', 4, 'm', 1, 50, 56, 78, 'Prashanth Reddy G'),
+(27, '161fa07057', 'BT ', 2, 'f', 4, 97, 64, 86, 'Atluri Nayen'),
+(28, '161fa07058', 'ChE ', 4, 'f', 2, 82, 93, 90, 'Maddina Sowmya'),
+(29, '161fa07059', 'CE ', 2, 'm', 3, 74, 82, 98, 'Jagarlamudi Nikhitha Sai'),
+(30, '161fa07060', 'CSE ', 1, 'f', 0, 90, 34, 33, 'Sai Anudeep Arikapalli'),
+(31, '161fa07061', 'AE ', 3, 'm', 0, 20, 23, 12, 'Sreelekha Dantu'),
+(32, '161fa07062', 'BT ', 3, 'f', 0, 60, 88, 65, 'Meghana Kurukundha'),
+(33, '161fa07063', 'ChE ', 3, 'f', 0, 50, 56, 78, 'Ramadugula Sree Venkata Naga Sowjanya'),
+(34, '161fa07064', 'CE ', 3, 'm', 1, 97, 64, 86, 'Sreyash Srivastava'),
+(35, '161fa07065', 'CSE ', 4, 'f', 4, 82, 93, 90, 'Alekhya Guduru'),
+(36, '161fa07066', 'ECE ', 2, 'm', 2, 74, 82, 98, 'K.Yasaswini'),
+(37, '161fa07067', 'EEE ', 4, 'f', 3, 90, 34, 33, 'Sagar Thokala'),
+(38, '161fa07068', 'ME ', 2, 'f', 0, 20, 23, 12, 'Satya Seetha Ramaiah Chebrolu'),
+(39, '161fa07069', 'IT ', 1, 'm', 0, 60, 88, 65, 'Sasidhar Gunturu'),
+(40, '161fa07070', 'MBA ', 3, 'f', 0, 50, 56, 78, 'Sampurna'),
+(41, '161fa07071', 'H ', 3, 'm', 0, 97, 64, 86, 'Dara Lakshmi Sowmya'),
+(42, '161fa07072', 'PSc ', 3, 'f', 1, 82, 93, 90, 'Lakshmiharika'),
+(43, '161fa07073', 'AE ', 3, 'f', 4, 74, 82, 98, 'Chamarthy Niharika'),
+(44, '161fa07074', 'BT ', 4, 'm', 2, 90, 34, 33, 'S. Harija Pranava'),
+(45, '161fa07075', 'ChE ', 2, 'f', 3, 20, 23, 12, 'Racharla Vineeth'),
+(46, '161fa07076', 'CE ', 4, 'm', 0, 60, 88, 65, 'Muvva. Nikhita'),
+(47, '161fa07077', 'CSE ', 2, 'f', 0, 50, 56, 78, 'Suraj Maddaka'),
+(48, '161fa07078', 'AE ', 1, 'f', 0, 97, 64, 86, 'Chukkapalli Deepti'),
+(49, '161fa07079', 'BT ', 3, 'm', 0, 82, 93, 90, 'Kakarla b Pavani'),
+(50, '161fa07080', 'ChE ', 3, 'f', 1, 74, 82, 98, 'Muvva Chaitanya'),
+(51, '161fa07081', 'CE ', 3, 'm', 4, 90, 34, 33, 'Venkata Sai Eswar Pudipeddi'),
+(52, '161fa07082', 'CSE ', 3, 'f', 2, 20, 23, 12, 'Hemanth Rachabattuni'),
+(53, '161fa07083', 'ECE ', 4, 'f', 3, 60, 88, 65, 'Chandrapriya'),
+(54, '161fa07084', 'EEE ', 2, 'm', 0, 50, 56, 78, 'Potla Jithendra'),
+(55, '161fa07085', 'ME ', 4, 'f', 0, 97, 64, 86, 'Ssai Siddhardh Gopisetty'),
+(56, '161fa07086', 'IT ', 2, 'm', 0, 82, 93, 90, 'Akhila Challagundla'),
+(57, '161fa07087', 'MBA ', 1, 'f', 0, 74, 82, 98, 'Mahidhar Boreddy'),
+(58, '161fa07088', 'H ', 3, 'f', 1, 90, 34, 33, 'Sridevi Kosaraju'),
+(59, '161fa07089', 'PSc ', 3, 'm', 4, 20, 23, 12, 'Sridevi Ambatipudi'),
+(60, '161fa07090', 'AE ', 3, 'f', 2, 60, 88, 65, 'Geetha Undela'),
+(61, '161fa07091', 'BT ', 3, 'm', 3, 50, 56, 78, 'Lakshmi Bhavani Gummadi'),
+(62, '161fa07092', 'ChE ', 4, 'f', 0, 97, 64, 86, 'M.K.V.Sai Shruthi'),
+(63, '161fa07093', 'CE ', 2, 'f', 0, 82, 93, 90, 'Nikhilasai Tummala'),
+(64, '161fa07094', 'CSE ', 4, 'm', 0, 74, 82, 98, 'Padavala Satya Sai Krishna'),
+(65, '161fa07095', 'AE ', 2, 'f', 0, 90, 34, 33, 'Anumolu Dinesh'),
+(66, '161fa07096', 'BT ', 1, 'm', 1, 20, 23, 12, 'Prasanna Reddy Isireddy'),
+(67, '161fa07097', 'ChE ', 3, 'f', 4, 60, 88, 65, 'Sri Teja Aryasomayajula'),
+(68, '161fa07098', 'CE ', 3, 'f', 2, 50, 56, 78, 'Sk.Gulshan Firdose'),
+(69, '161fa07099', 'CSE ', 3, 'm', 3, 97, 64, 86, 'Moksha Deepika Kaparowthu'),
+(70, '161fa07100', 'ECE ', 3, 'f', 0, 82, 93, 90, 'Poojitha Lekkalapudi'),
+(71, '161fa07101', 'EEE ', 4, 'm', 0, 74, 82, 98, 'Zuri Shaddai Kuchipudi'),
+(72, '161fa07102', 'ME ', 2, 'f', 0, 90, 34, 33, 'Saladhi Devi Pavan Kumar'),
+(73, '161fa07103', 'IT ', 4, 'f', 0, 20, 23, 12, 'Prashanth Reddy G'),
+(74, '161fa07104', 'MBA ', 2, 'm', 1, 60, 88, 65, 'Atluri Nayen'),
+(75, '161fa07105', 'H ', 1, 'f', 4, 50, 56, 78, 'Maddina Sowmya'),
+(76, '161fa07106', 'PSc ', 3, 'm', 2, 97, 64, 86, 'Jagarlamudi Nikhitha Sai'),
+(77, '161fa07107', 'AE ', 3, 'f', 3, 82, 93, 90, 'Sai Anudeep Arikapalli'),
+(78, '161fa07108', 'BT ', 3, 'f', 0, 74, 82, 98, 'Sreelekha Dantu'),
+(79, '161fa07109', 'ChE ', 3, 'm', 0, 90, 34, 33, 'Meghana Kurukundha'),
+(80, '161fa07110', 'CE ', 4, 'f', 0, 20, 23, 12, 'Ramadugula Sree Venkata Naga Sowjanya'),
+(81, '161fa07111', 'CSE ', 2, 'm', 0, 60, 88, 65, 'Sreyash Srivastava'),
+(82, '161fa07112', 'AE ', 4, 'f', 1, 50, 56, 78, 'Alekhya Guduru'),
+(83, '161fa07113', 'BT ', 2, 'f', 4, 97, 64, 86, 'K.Yasaswini'),
+(84, '161fa07114', 'ChE ', 1, 'm', 2, 82, 93, 90, 'Sagar Thokala'),
+(85, '161fa07115', 'CE ', 3, 'f', 3, 74, 82, 98, 'Satya Seetha Ramaiah Chebrolu'),
+(86, '161fa07116', 'CSE ', 3, 'm', 0, 90, 34, 33, 'Sasidhar Gunturu'),
+(87, '161fa07117', 'ECE ', 3, 'f', 0, 20, 23, 12, 'Sampurna'),
+(88, '161fa07118', 'EEE ', 3, 'f', 0, 60, 88, 65, 'Dara Lakshmi Sowmya'),
+(89, '161fa07119', 'ME ', 4, 'm', 0, 50, 56, 78, 'Lakshmiharika'),
+(90, '161fa07120', 'IT ', 2, 'f', 1, 97, 64, 86, 'Chamarthy Niharika'),
+(91, '161fa07121', 'MBA ', 4, 'm', 4, 82, 93, 90, 'S. Harija Pranava'),
+(92, '161fa07122', 'H ', 2, 'f', 2, 74, 82, 98, 'Racharla Vineeth'),
+(93, '161fa07123', 'PSc ', 1, 'f', 3, 90, 34, 33, 'Muvva. Nikhita'),
+(94, '161fa07124', 'AE ', 3, 'm', 0, 20, 23, 12, 'Suraj Maddaka'),
+(95, '161fa07125', 'BT ', 3, 'f', 0, 60, 88, 65, 'Chukkapalli Deepti'),
+(96, '161fa07126', 'ChE ', 3, 'm', 0, 50, 56, 78, 'Kakarla b Pavani'),
+(97, '161fa07127', 'CE ', 3, 'f', 0, 97, 64, 86, 'Muvva Chaitanya'),
+(98, '161fa07128', 'CSE ', 4, 'f', 1, 82, 93, 90, 'Venkata Sai Eswar Pudipeddi'),
+(99, '161fa07129', 'AE ', 2, 'm', 4, 74, 82, 98, 'Hemanth Rachabattuni'),
+(100, '161fa07130', 'BT ', 4, 'f', 2, 90, 34, 33, 'Chandrapriya');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `candidates`
+--
+ALTER TABLE `candidates`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `candidates`
+--
+ALTER TABLE `candidates`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
